@@ -37,8 +37,8 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|body|text|null:false,foreign_key:true|
-|image|string|null:false,foreign_key:true|
+|body|text|foreign_key:true|
+|image|string|null:false,|
 |user_id|integer|null:false,foreign_key:true|
 |group_id|integer|null:false,foreign_key:true|
 
@@ -60,7 +60,7 @@ Things you may want to cover:
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|group-name|string|null: false, unique: true|
+|name|string|null: false, unique: true|
 
 ### Association
 - has_many :groups_users
