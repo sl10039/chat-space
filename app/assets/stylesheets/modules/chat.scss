@@ -23,8 +23,8 @@
       }
     }
     .right-header {
-      border: 1px solid $light_blue;
-      color: $light_blue;
+      border: 1px solid #38AEF0;
+      color: #38AEF0;
       float: right;
       height: 40px;
       line-height: 40px;
@@ -76,7 +76,7 @@
       width: calc(100% - 150px);
     }
     &__mask {
-      background-color: $white;
+      background-color: #fff;
       float: left;
       height: 50px;
       padding-right: 10px;
@@ -89,9 +89,9 @@
       }
     }
     &__submit {
-      background-color: $light_blue;
+      background-color: #38AEF0;
       border: none;
-      color: $white;
+      color: #fff;
       float: right;
       font-size: 16px;
       height: 50px;
