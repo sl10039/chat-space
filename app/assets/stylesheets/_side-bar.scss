@@ -1,0 +1,70 @@
+.side-bar {
+  background-color: #253141;
+  width: 300px;
+  height: 100vh;
+  float: left;
+}
+
+
+
+.side-header {
+  background-color: #253141;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  
+}
+
+.side-box {
+  height: 20px;
+  width: 260px;
+  background-color: #253141;
+  margin: 0 20px;
+  display: flex;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.header-name {
+  line-height: 20px;
+ 
+}
+
+
+.header-lists{
+  display: inline-block;
+  float: right;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.list {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.icon {
+  color: #ffffff;
+}
+
+.groups {
+  background-color: #2f3e51;
+  height: calc(100vh - 100px);
+  padding: 0 20px;
+}
+
+.group {
+  padding: 20px 0 40px;
+}
+
+.group-name {
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.group-message {
+  color: #ffffff;
+  font-size: 11px;
+ 
+}

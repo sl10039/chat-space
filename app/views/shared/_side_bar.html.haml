@@ -1,19 +1,20 @@
 .side-bar
-  .header
-    %h3.header__name
-      = current_user.name
-    %ul.header__lists
-      %li.list
-        = link_to new_group_path do
-          = icon('fa', 'edit',class: 'icon')
-      %li.list
-        = link_to edit_user_path(current_user) do
-          = icon('fas', 'cog', class: 'icon')
-  .groups
-    - current_user.groups.each do |group|       
-      .group
-        = link_to '#' do
-          .group__name
-            = group.name
-          .group__message
-            新着メッセージ
+ .side-header
+  %h3.side-box.header-name
+   = current_user.name
+   %ul.header-lists
+    %li.list
+     = link_to edit_user_path(current_user) do
+      = icon("fas", "cog", class: "icon")
+   %ul.header-lists
+    %li.list
+     = link_to new_group_path do
+      = icon("fas", "edit", class: "icon")
+ .groups
+  - current_user.groups.each do |group|
+   .group
+    = link_to group_messages_path(group) do
+     .group-name
+      = group.name
+     .group-message
+      = group.show_last_message
