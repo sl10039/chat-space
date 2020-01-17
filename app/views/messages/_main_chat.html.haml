@@ -10,11 +10,11 @@
    = link_to "Edit", edit_group_path(@group.id),class:"edit-button"
  .messages
   = render @messages
-.main-footer
- .form
-  = form_for [@group, @message] do |f|
-   = f.text_field :content, class: 'form__text-message', placeholder: "type a messeage"
-   = f.label :image, class: 'form__image-btn' do
-    = icon("far", "image")
-    = f.file_field :image, class: 'hidden'
-   = f.submit "Send", class:"form__send-btn"
+ .main-footer
+  .form
+   = form_for [@group, @message] do |f|
+    = f.text_field :content, class: 'form__text-message', placeholder: "type a messeage"
+    = f.label :image, class: 'form__image-btn' do
+     = icon("far", "image")
+     = f.file_field :image, class: 'hidden'
+    = f.submit "Send", class:"form__submit"
