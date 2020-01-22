@@ -1,4 +1,4 @@
-.message
+.message{data: {message: {id: message.id}}}
  .upside-message
   .user-name
    = message.user.name
@@ -8,4 +8,4 @@
   - if message.content.present?
    %p.message-contents
     = message.content
-  = image_tag message.image.url, class: 'lower-message__image' if message.image.present?
+  = image_tag message.image.url, class: 'downside-message-image' if message.image.present?
