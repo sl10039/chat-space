@@ -15,9 +15,10 @@ $(function(){
          <div class="downside-message">
            <p class="message-content">
              ${message.content}
+             <img class="downside-message-image" src=${message.image} >
            </p>
          </div>
-         <img class="downside-message-image" src=${message.image} >
+         
        </div>`
      return html;
    } else if(message.content) {
