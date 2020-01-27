@@ -60,7 +60,7 @@
 .messages {
   background-color: #fafafa;
   padding-top: 35px;
-  height: 553px;
+  height: calc(100vh - 235px);
   overflow: scroll;
   width: 100%;
 }
